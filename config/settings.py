@@ -38,7 +38,9 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APP = [
     "apps.users",
-    "apps.inventorymanagement",
+    "apps.inventory_management",
+    "apps.warehouse_management",
+    "apps.features",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APP
