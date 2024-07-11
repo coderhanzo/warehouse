@@ -274,6 +274,21 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-autoslug"
+version = "1.9.9"
+description = "An automated slug field for Django."
+optional = false
+python-versions = "*"
+files = [
+    {file = "django-autoslug-1.9.9.tar.gz", hash = "sha256:79f88e9433c1c88d8d3f2bec60d65ca98bffaff6c072b78aa5fd99d0e84a13dd"},
+    {file = "django_autoslug-1.9.9-py2.py3-none-any.whl", hash = "sha256:81cb018944498f27f439d439687cf902212cafbdb8c74c8ca0307543a3d82907"},
+]
+
+[package.extras]
+cyrillic = ["pytils (>=0.2)"]
+translitcodec = ["translitcodec (>=0.3)"]
+
+[[package]]
 name = "django-environ"
 version = "0.11.2"
 description = "A package that allows you to utilize 12factor inspired environment variables to configure your Django application."
@@ -288,6 +303,40 @@ files = [
 develop = ["coverage[toml] (>=5.0a4)", "furo (>=2021.8.17b43,<2021.9.dev0)", "pytest (>=4.6.11)", "sphinx (>=3.5.0)", "sphinx-notfound-page"]
 docs = ["furo (>=2021.8.17b43,<2021.9.dev0)", "sphinx (>=3.5.0)", "sphinx-notfound-page"]
 testing = ["coverage[toml] (>=5.0a4)", "pytest (>=4.6.11)"]
+
+[[package]]
+name = "django-js-asset"
+version = "2.2.0"
+description = "script tag with additional attributes for django.forms.Media"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "django_js_asset-2.2.0-py3-none-any.whl", hash = "sha256:7ef3e858e13d06f10799b56eea62b1e76706f42cf4e709be4e13356bc0ae30d8"},
+    {file = "django_js_asset-2.2.0.tar.gz", hash = "sha256:0c57a82cae2317e83951d956110ce847f58ff0cdc24e314dbc18b35033917e94"},
+]
+
+[package.dependencies]
+django = ">=3.2"
+
+[package.extras]
+tests = ["coverage"]
+
+[[package]]
+name = "django-mptt"
+version = "0.16.0"
+description = "Utilities for implementing Modified Preorder Tree Traversal with your Django Models and working with trees of Model instances."
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "django_mptt-0.16.0-py3-none-any.whl", hash = "sha256:8716849ba3318d94e2e100ed0923a05c1ffdf8195f8472b690dbaf737d2af3b5"},
+    {file = "django_mptt-0.16.0.tar.gz", hash = "sha256:56c9606bf0b329b5f5afd55dd8bfd073612ea1d5999b10903b09de62bee84c8e"},
+]
+
+[package.dependencies]
+django-js-asset = "*"
+
+[package.extras]
+tests = ["coverage[toml]", "mock-django"]
 
 [[package]]
 name = "django-phonenumber-field"
@@ -646,4 +695,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "ed32a1eca9538f2b22543da88fea556c8ab2dff66b3e2693f7fba1f258dc11fb"
+content-hash = "3d3c5b3e12d99c6aa52f79d98e80ea46a1d4391cd1c3647955cb05779c3a6ace"
